@@ -88,7 +88,6 @@ async function loadReviews() {
   try {
     const data = await loadData();
     reviewsContainer.insertAdjacentHTML('beforeend', createMarkupReviews(data));
-    // reviewsSwiper.updateSlides();
   } catch (error) {
     iziToast.show({
       theme: 'dark',
